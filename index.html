@@ -2,7 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Collaboratorio</title>
+    <link rel="stylesheet" href="dist/hamburgers.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -24,17 +26,27 @@
                     <img src="https://collaboratorio.fi/wp-content/themes/collaboratorio/build/img/Logo.svg" alt="logo">           
                 </a>
             </div>
-            <div class="hamburger">&#9776;</div>
-            <nav>
-                <a href="#">Works</a>
-                <a href="./services.html">Services</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
+            <button class="hamburger hamburger--collapse">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <nav id="nav_desktop">
+                <a class="menuLink" href="#">Works</a>
+                <a class="menuLink" href="./services.html">Services</a>
+                <a class="menuLink" href="#">About Us</a>
+                <a class="menuLink" href="#">Contact</a>
             </nav>
         </div>
     </div>
-    <main>
+    <main id="main">
         <div class="main_wrapper">
+            <nav id="nav_mobile">
+                <a class="menuLink" href="#">Works</a>
+                <a class="menuLink" href="./services.html">Services</a>
+                <a class="menuLink" href="#">About Us</a>
+                <a class="menuLink" href="#">Contact</a>
+            </nav>
             <div class="intro_message_container">
                 <div class="intro_message">
                     Collaboratorio is an international architecture studio based in Helsinki, founded in 2016
@@ -132,7 +144,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="footer_wrapper">
             <div class="footer_contact_info">
                 <div class="footer_item">
@@ -171,6 +183,5 @@
         </div>
     </footer>
 </body>
-
 </html>
 
